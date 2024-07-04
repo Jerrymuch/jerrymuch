@@ -12,7 +12,24 @@
             align-items: center;
             padding: 20px;
         }
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
         .menu-item {
+            flex: 1 1 calc(25% - 20px); /* 4 items per row */
+            box-sizing: border-box;
             margin: 10px;
             padding: 10px;
             border: 1px solid #ccc;
@@ -22,55 +39,33 @@
             width: 150px;
             height: 150px;
         }
-        .logo {
-            width: 200px;
-            height: auto;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FhYGPz29MB3sWyEnxRFvebcaRoTkTH_mLg&s" class="logo">
-    <h1>SBS컴퓨터아카데미학원</h1>
-    <div class="menu-item">
-        <img src="https://ordsearch.net/storage/images/units/ord/icons/216.png" alt="Menu Item 1">
-        <h2>Menu Item 1</h2>
-        <p>Description of menu item 1.</p>
-    </div>
-    <div class="menu-item">
-        <img src="https://ordsearch.net/storage/images/units/ord/icons/189.png" alt="Menu Item 2">
-        <h2>Menu Item 2</h2>
-        <p>Description of menu item 2.</p>
-    </div>
-    <div class="menu-item">
-        <img src="https://via.placeholder.com/150.png" alt="Menu Item 3">
-        <h2>Menu Item 3</h2>
-        <p>Description of menu item 3.</p>
-    </div>
-    <div class="menu-item">
-        <img src="https://via.placeholder.com/150.png" alt="Menu Item 4">
-        <h2>Menu Item 4</h2>
-        <p>Description of menu item 4.</p>
-    </div>
-    <div class="menu-item">
-        <img src="https://via.placeholder.com/150.png" alt="Menu Item 5">
-        <h2>Menu Item 5</h2>
-        <p>Description of menu item 5.</p>
-    </div>
-    <div class="menu-item">
-        <img src="https://via.placeholder.com/150.png" alt="Menu Item 6">
-        <h2>Menu Item 6</h2>
-        <p>Description of menu item 6.</p>
-    </div>
-    <div class="menu-item">
-        <img src="https://via.placeholder.com/150.png" alt="Menu Item 7">
-        <h2>Menu Item 7</h2>
-        <p>Description of menu item 7.</p>
-    </div>
-    <div class="menu-item">
-        <img src="https://via.placeholder.com/150.png" alt="Menu Item 8">
-        <h2>Menu Item 8</h2>
-        <p>Description of menu item 8.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FhYGPz29MB3sWyEnxRFvebcaRoTkTH_mLg&s" alt="Logo" class="logo">
+    <h1>SBS아카데미컴퓨터아트학원</h1>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://raw.githubusercontent.com/Jerrymuch/jerrymuch/main/T1.jpg" alt="사회복지 과정">
+            <h2>사회복지 과정</h2>
+            <p>누구보다 사회로부터 도움이 필요한 전문가가 안내하는 과정</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://github.com/Jerrymuch/jerrymuch/blob/main/T2.jpg?raw=true" alt="심리학 과정">
+            <h2>심리학 과정</h2>
+            <p>개 밥그릇에 식사해도 불행하지 않는 마인드를 보유한 강사</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://github.com/Jerrymuch/jerrymuch/blob/main/T3.jpg?raw=true" alt="특수교육 과정">
+            <h2>특수교육 과정</h2>
+            <p>장애인 상담경험 多 전문가 </p>
+        </div>
+        <div class="menu-item">
+            <img src="https://github.com/Jerrymuch/jerrymuch/blob/main/T4.jpg?raw=true" alt="교양인문학 과정">
+            <h2>교양인문학 과정</h2>
+            <p>수많은 억까를 겪은 마초男</p>
+
+        </div>
     </div>
 </body>
 </html>
